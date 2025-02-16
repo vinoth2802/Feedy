@@ -1,0 +1,16 @@
+body, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #471CA8;
+    --color2: #884AB2;
+    --color3: #FF930A;
+    --color4: #F24B04;
+    --color5: #D1105A;
+    --color-head: #04052e;
+    
+  }
