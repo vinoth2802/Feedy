@@ -51,7 +51,7 @@ const AdminLogin = ({setIsAuthenticated}) => {
                 .catch(error => {
                     setError({
                         ...errorObj,
-                        account: "Account does not exist for this register number"
+                        account: "Account does not exist for this username"
                     });
                 })
         }
