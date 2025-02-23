@@ -118,21 +118,20 @@ const AdminPage = () => {
         getReport(id)
             .then(response => {
                 if (response.status === 200) {
-                    const blob = new Blob([response.data], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+                    const blob = new Blob([response.data], { type: response.headers['content-type'] });
 
+                    let fileName = "Report.xlsx";
                     const contentDisposition = response.headers["content-disposition"];
-                    let fileName = "Report.xlsx"; 
-
                     if (contentDisposition) {
                         const match = contentDisposition.match(/filename="?([^"]+)"?/);
                         if (match && match[1]) {
-                            fileName = match[1];
+                            fileName = decodeURIComponent(match[1]); 
                         }
                     }
 
                     const link = document.createElement("a");
                     link.href = window.URL.createObjectURL(blob);
-                    link.download = fileName; 
+                    link.download = fileName;
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
