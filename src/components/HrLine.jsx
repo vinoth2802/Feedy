@@ -3,7 +3,7 @@ import '../css/HrLine.css'
 
 const HrLine = () => {
   return (
-      <div class="hr-with-text">or</div>
+      <div className="hr-with-text">or</div>
   )
 }
 

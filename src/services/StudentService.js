@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_URL = `${import.meta.env.VITE_API_URL}/student/`;
+const API_URL =  `${import.meta.env.VITE_API_URL}/student`;
 
-console.log(API_URL);
-
-export const getStudent =(id) => axios.get(API_URL + id);
+export const getStudent = (id) => {
+    return axios.get(`${API_URL}/${id}`);
+};

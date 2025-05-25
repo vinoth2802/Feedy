@@ -1,0 +1,72 @@
+.confirm-dialog .modal-content {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-dialog .modal-header {
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.confirm-dialog .modal-body {
+  padding: 1rem 1.5rem;
+}
+
+.confirm-dialog .modal-body p {
+  color: #000000;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.confirm-dialog .modal-footer {
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.confirm-dialog .btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.confirm-dialog .btn-light {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #171819;
+}
+
+.confirm-dialog .btn-light:hover {
+  background-color: #e2e6ea;
+  border-color: #ced4da;
+  color: #212529;
+  transform: translateY(-1px);
+}
+
+.confirm-dialog .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.confirm-dialog .btn-danger:hover {
+  background-color: #bb2d3b;
+  transform: translateY(-1px);
+}
+
+.confirm-dialog .modal-title {
+  font-size: 1.25rem;
+  color: #212529;
+  font-weight: 600;
+}
+
+.confirm-dialog .close {
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+  color: #6c757d;
+}
+
+.confirm-dialog .close:hover {
+  opacity: 1;
+  color: #dc3545;
+  transform: scale(1.1);
+} 
